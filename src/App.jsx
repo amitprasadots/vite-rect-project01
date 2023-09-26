@@ -9,7 +9,7 @@ function App() {
       <h1>let change react::</h1>
       <Change/>
       <About/>
-      <Newbranchtest/>
+      <Newbranchtest/> 
     </>
   )
 }
