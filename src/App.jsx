@@ -1,3 +1,4 @@
+import About from "./components/About"
 import Change from "./components/change"
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <h1>let change react::</h1>
       <Change/>
+      <About/>
     </>
   )
 }
