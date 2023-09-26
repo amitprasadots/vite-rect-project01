@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Change = () => {
+const Change = (props) => {
     return (
         <div>
-          <h1>Chnage Components Used !!</h1>  
+          <h1>Chnage Components Used !! {props.view}</h1>  
         </div>
     )
 }

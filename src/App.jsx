@@ -4,13 +4,11 @@ import Change from "./components/change"
 
 function App() {
 
-  function hello(){
-    return "Hello World..."
-  }
+ const view = "Hello World"
   return (
     <>
-      <h1>let change react:: {hello()}</h1>
-      <Change/>      
+      <h1>let change react:: </h1>
+      <Change view={view} />      
       <About/>
       <Newbranchtest/> 
     </>
