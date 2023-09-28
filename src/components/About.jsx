@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
 
 const About = (props) => {
-    const [rest, setReset] = useState(0);
     const sendDataToParent = () => {
-        props.sendDataToParent(rest);
+        props.sendDataToParent();
       };
     return (
         <div>
             <h1>This is About Components </h1>
-            <button  onClick={() => {setReset(0);sendDataToParent()} }
+            <button  onClick={() => {sendDataToParent()} }
             >
-             Reset Button
+             Decrease Number
             </button>
         </div>
     )

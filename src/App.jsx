@@ -6,16 +6,12 @@ import { MyContext } from "./MyContext";
 
 function App() {
   const [text, setText] = useState(0);
-  const view = "Hello World"
-  const [dataFromChild, setDataFromChild] = useState(null);
-  const handleDataFromChild = (data) => {
-    setDataFromChild(data);
-    setText(dataFromChild);
-  };
+  const view = "Hello World";
+  const handleDataFromChild = () => text>0?setText(text-1):0;  
   return (
     <>
       <MyContext.Provider value={{ text, setText }}>
-        <h1>let change react::{dataFromChild} </h1>
+        <h1>let change react:: </h1>
         <Change view={view} />      
         <About sendDataToParent={handleDataFromChild}/>
         <Newbranchtest  /> 

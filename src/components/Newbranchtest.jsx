@@ -9,9 +9,8 @@ const Newbranchtest = (props) => {
         <div>
             <h1>This is  New branch test::  </h1>
             <button onClick={() => setText(text=>text+1)}>
-             Click me
-            </button>
-           
+             Add Number
+            </button>           
         </div>
     )
 }

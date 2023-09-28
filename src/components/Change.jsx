@@ -5,7 +5,7 @@ const Change = (props) => {
   const { text } = useContext(MyContext);
     return (
         <div>
-          <h1>Chnage Components Used !! {text}</h1>  
+          <h1>Chnage Components Used :: {text}</h1>  
           <h2>{props.view}</h2>
         </div>
     )
