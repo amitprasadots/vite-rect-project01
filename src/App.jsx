@@ -1,6 +1,6 @@
 import About from "./components/About"
 import Newbranchtest from "./components/Newbranchtest"
-import Change from "./components/change"
+import Change from "./components/Change";
 import { useState, React } from "react";
 import { MyContext } from "./MyContext";
 
@@ -10,14 +10,15 @@ function App() {
   const [dataFromChild, setDataFromChild] = useState(null);
   const handleDataFromChild = (data) => {
     setDataFromChild(data);
+    setText(dataFromChild);
   };
   return (
     <>
       <MyContext.Provider value={{ text, setText }}>
-      <h1>let change react::{dataFromChild} </h1>
-      <Change view={view} newvalue={dataFromChild}/>      
-      <About sendDataToParent={handleDataFromChild}/>
-      <Newbranchtest  /> 
+        <h1>let change react::{dataFromChild} </h1>
+        <Change view={view} />      
+        <About sendDataToParent={handleDataFromChild}/>
+        <Newbranchtest  /> 
       </MyContext.Provider>
     </>
   )
