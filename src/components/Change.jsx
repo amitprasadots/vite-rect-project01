@@ -5,8 +5,10 @@ const Change = (props) => {
   const { text } = useContext(MyContext);
     return (
         <div>
-          <h1>Chnage Components Used :: {text}</h1>  
-          <h2>{props.view}</h2>
+           <h1 className="text-3xl font-bold underline">
+           Hello world!
+           </h1>
+          <h1>{props.view}</h1>
         </div>
     )
 }
