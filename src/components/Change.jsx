@@ -1,9 +1,14 @@
-import React from 'react'
+import {useContext} from 'react'
+import { MyContext } from '../MyContext'
 
-const Change = () => {
+const Change = (props) => {
+  const { text } = useContext(MyContext);
     return (
         <div>
-          <h1>Chnage Components Used !!</h1>  
+           <h1 className="bg bg-green-600 text-10xl font-bold underline rounded-md">
+          React Counter setup {text}
+           </h1>
+          <h1>{props.view}</h1>
         </div>
     )
 }
