@@ -1,6 +1,5 @@
-import { useContext , React, useState } from 'react'
+import { useContext} from 'react'
 import { MyContext } from '../MyContext'
-
 
 const Newbranchtest = (props) => {   
     const { setText } = useContext(MyContext);

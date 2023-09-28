@@ -1,4 +1,4 @@
-import { useContext , React } from 'react'
+import {useContext} from 'react'
 import { MyContext } from '../MyContext'
 
 const Change = (props) => {
