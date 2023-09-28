@@ -13,10 +13,10 @@ function App() {
   return (
     <>
       <MyContext.Provider value={{ text, setText }}>
-        <h1>let change react:: </h1>
-        <Change view={view} />      
+        <h1>let change react:: {text}</h1>
+        <Change view={view}/>      
         <About sendDataToParent={handleDataFromChild}/>
-        <Newbranchtest  /> 
+        <Newbranchtest/> 
       </MyContext.Provider>
     </>
   )
